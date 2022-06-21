@@ -1,0 +1,80 @@
+@import "0_general.css";
+
+/* ------------- PERFILES AUTORES ------------- */
+.autores{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-autores{
+    max-width: 900px;
+    padding: 20px 10px 20px 10px;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+}
+.contTitulo{
+    display: flex;
+    justify-self: flex-start;
+}
+.autor{
+    border: solid var(--gris2);
+    max-width: 900px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+/* ----------- FORMULARIO CONTACTO ----------- */
+.contContacto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contContacto-fomulario {
+    border: solid var(--gris2);
+    display: grid;
+    row-gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    max-width: 680px;
+}
+    /*FORMULARIO - TEXT BOX*/
+    .formulario-textBox{
+        height: 200px;
+    }
+    /*BOTÓN DE ENVIAR*/
+    .contContacto-fomulario-submit{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+/* -------------- SNIPPET FORO -------------- */
+.contForo{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.tarjetas{
+    padding-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.tarjetas-tarjeta{
+    margin-left: 10px;
+    padding: 10px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+
+/* -------------- SCROLLBAR -------------- */
+.my-custom-scrollbar {
+    position: relative;
+    max-width: 1200px;
+    height: 400px;
+    overflow: auto;
+}

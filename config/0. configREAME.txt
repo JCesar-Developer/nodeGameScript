@@ -1,0 +1,2 @@
+[CONFIG] 
+Se usa para crear variables globales del proyecto.

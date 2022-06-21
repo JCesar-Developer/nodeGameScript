@@ -1,0 +1,51 @@
+--------------------
+[ --- CONTIENE --- ]
+--------------------
+
+-> Contiene la API-RESTFull, que está compuesta por:
+-> Los métodos REST:
+    - Post. 
+    - Get.
+    - Put.
+    - Delete.
+-> Los métodos CRUD:
+    - Create.
+    - Read.
+    - Put.
+    - Delete.
+-> Y sus correspondientes validaciones.
+
+----------------------
+[ --- DEFINICIÓN --- ]
+----------------------
+
+Actúa como intermediario entre el Modelo y la Vista, 
+gestionando el flujo de información entre ellos y las 
+transformaciones para adaptar los datos a las necesidades 
+de cada uno.
+
+Existe entre la vista y el modelo. Escucha los eventos 
+desencadenados por la vista y ejecuta el procedimiento 
+adecuado a estos eventos. Por ejemplo, un controlador 
+puede actualizar un modelo cambiando los atributos de 
+un personaje en un videojuego así como también puede 
+modificar la vista mostrando el personaje actualizado 
+en el juego.
+
+---------------------
+[ --- FUNCIONES --- ]
+---------------------
+- Recibe los eventos de entrada 
+    ¿DÓNDE SE HACEN LAS VALIDACIONES?
+    GET   - Un click solicitando algo
+    POST  - Un cambio en un campo de texto, etc.
+
+- CONTIENE REGLAS DE GESTION DE EVENTOS: 
+  del tipo "SI Evento Z, entonces Acción W". 
+  Estas acciones pueden suponer peticiones al modelo o a las vistas. 
+    Ejemplo: 
+    -   Una de estas peticiones a las vistas puede ser una 
+        llamada al método "Actualizar()". 
+    -   Una petición al modelo puede ser "Obtener_tiempo_de_entrega 
+        ( nueva_orden_de_venta )". 
+

@@ -1,0 +1,106 @@
+<head>
+    <link rel="stylesheet" href="/public/css/1_index.css">
+</head>
+
+<!--HERO-->
+<!-- BACKGROUND IMAGE -->
+<div id="intro-example" class="p-5 text-center bg-image" href=""
+    style="background-image: url('/public/img/pattern.jpg');">
+
+    <!-- COLUMNA: CAJAS FORMULARIO -->
+
+    <div class="row ">
+        <div class="col mask content-mask">
+            <div class="text-white">
+                <form action="/user/register" method="POST">
+                    <h1 class="mb-3">GameScript</h1>
+                    <h2 class="crea_usuario">Crea tu usuario</h2>
+                    <div class="section">
+                        <div class="tittle">Username</div>
+                        <div class="field"><input type="text" id="username" name="username"></div>
+                    </div>
+                    <div class="section">
+                        <div class="tittle">Password</div>
+                        <div class="field"><input type="password" id="password" name="password"></div>
+                    </div>   
+                    <div class="section">
+                        <div class="button1"><input type="submit" value="register"> </div>                            
+                    </div>                                        
+                </form>                    
+                <h1></h1>                    
+            </div>
+        </div>
+
+        <!-- Inicio Sesion -->
+        <div class="col mask content-mask">
+            <div class="row">
+                <form action="/user/login" method="POST">                        
+                        <h1 class="mb-3">Inicio Sesion</h1> 
+                        <h2 class="crea_usuario">Inicia sesión</h2>                       
+                    <div class="col content-name ">
+                        <div class="section">
+                            <div class="tittle">Username</div>
+                            <div class="field"><input type="text" id="username" name="username"></div>
+                        </div>
+                        <div class="section">
+                            <div class="tittle">Password</div>
+                            <div class="field"><input type="password" id="password" name="password"></div>
+                        </div>
+                        <div class="section">
+                            <div class="button2"><input type="submit" value="login"></div>
+                        </div>  
+                    </div> 
+                </form>
+            </div>
+        </div> <!-- /Inicio Sesion -->
+        
+
+    </div><!-- COLUMNA: CAJAS FORMULARIO -->
+</div><!--HERO-->
+
+
+<!-- /PARTE PRINCIPAL -->
+
+<main>
+    <!-- SEPARADOR FUNKOS -->
+    <div id="separador-funkos">
+        <div class="content bg-success"></div>
+    </div>
+
+    <!-- FUNKOS -->
+    <div id="funkos" class="px-5 pb-5 bg-success">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text-shadow">FUNKOS</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+                <div class="col-sm">
+                    <img src="/public/img/figure01.png" alt="funko 1" class="w-100 funko">
+                    <div class="text-center"><span class="funko-name h5 p-2">Jugador 01</span></div>
+                </div>
+                <div class="col-sm">
+                    <img src="/public/img/figure02.png" alt="funko 2" class="w-100 funko">
+                    <div class="text-center"><span class="funko-name h5 p-2">Jugador 02</span></div>
+                </div>
+                <div class="col-sm">
+                    <img src="/public/img/figure03.png" alt="funko 3" class="w-100 funko">
+                    <div class="text-center"><span class="funko-name h5 p-2">Jugador 03</span></div>
+                </div>
+                <div class="col-sm">
+                    <img src="/public/img/figure04.png" alt="funko 4" class="w-100 funko">
+                    <div class="text-center"><span class="funko-name h5 p-2">Jugador 04</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- SCRIPTS -->
+    <!-- JQUERY.JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- WEB-STORAGE -->
+    <script src="/public/js/appis/webStorage.js"></script>
+    <!-- SOCKET.IO -->
+    <script src="/socket.io/socket.io.js"></script>   
+    <script src="/public/js/cliente.js"></script>
+    <script src="/model/user.js"></script>

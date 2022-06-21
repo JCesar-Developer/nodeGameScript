@@ -1,0 +1,80 @@
+TODO: 
+---------------------
+--- Agenda Julito ---
+---------------------
+    - Terminar la implemenación del API REST -> AJAX.
+    - Documentar nueva API REST + AJAX
+    - Aplicar {bucle for} en handlebars que nos permita crear nuevas salas una debajo de otra.
+
+---------------------
+---- Agenda Kevin ---
+---------------------
+    - COMPULSORI: Documentar el incremento de SCORE + WebSockets.
+    - OP1: Hacer barra de incremento (¿?)
+        -> 
+        -> 
+    - OP2: Aplicar web Sockets a tablero de Juego (¿?)
+        -> Rastrear el inicio aleatorio -> Comentarlo.
+        ->  
+
+---------------------
+--- Agenda Sergio ---
+---------------------
+    - COMPULSORI: Imagen final con los 4 métodos CRUD de la API REST (Postman).
+    - FRONT: (OPC: Trello)  
+        -> Cariño al proyecto. 
+
+---------------------
+---- Agenda Manu ----
+---------------------
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------
+--- Listar los frameworks utilizados ---
+----------------------------------------
+API'S
+    - Bootstrap
+    - Drag & Drop
+    - WebSockets
+
+Frameworks
+    - express
+    - mongoose
+    - @hapi/joi
+    
+----------------------------------------
+-------------- PENDIENTES --------------
+----------------------------------------
+
+- COSAS QUE FALTARÓN DEL PRODUCTO 2: 
+-----------------------------------
+    - Front + Bootstrap         -> Falta corregir estética
+    - API Drag & Drop           -> Pulir BUGS (Nunca).
+    - API WebStorage            -> Aprender a mantener COOKIES del lado del servidor.
+
+- COSAS QUE FALTARÓN DEL PRODUCTO 3:
+-----------------------------------
+    - Express + MVC             ->  TERMINADO
+    - Canvas                    ->  Aprender a utilizar y revisar aplicabilidad.
+    - WebSockets (Socket.io)    ->  Arreglar chat y estética.
+                                    Aplicar para poder jugar en tiempo real.
+                                    (encapsular sala, usuario y posición)
+    - Motor de plantillas(PUG)  ->  Aplicar y hacer uso de los SCRIPTS de Handlebars
+
+- COSAS QUE FALTARÓN DEL PRODUCTO 4:
+------------------------------------
+    - ES5                       -> SIEMPRE
+    - XHR nivel 2 con JSON      -> ¿WHAT?
+    - API-REST + Postman        -> Jugadores(Hecho) - Salas(Incompleto).
+    - Documentar un API REST    -> Incompleto.
+    - AJAX                      -> Incompleto.
+    - Mongoose (MongoDB)        -> TERMINADO.

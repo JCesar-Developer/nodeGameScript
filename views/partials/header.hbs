@@ -1,0 +1,51 @@
+<!-- HEADER IMPORTADO -->
+<header class="background-negro">
+    <!-- NAVBAR NEGRA -->
+    <div class="navbar-superior">
+        <span><i>Un producto de GameScript</i></span>
+    </div> <!-- /NAVBAR NEGRA -->
+
+    <!-- NAVBAR GRIS -->
+    <nav class="navbar navbar-expand-sm background-gris navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo_container" href="#">
+                <h1>GameScript</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navBar-enlaces" id="navbarNav">
+                <ul class="navbar-nav">
+                    {{#if user}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lobby">Lobby</a>
+                        </li>
+                        {{!-- <li class="nav-item">
+                            <a class="nav-link" href="/playroom">PlayRoom</a>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/logout">Cerrar Sesion</a>
+                        </li>
+                        {{!-- <li class="nav-item">
+                            <a class="nav-link" href="/lobby">Salir</a>
+                        </li> --}}
+                    {{else}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- /NAVBAR GRIS -->
+</header> <!-- /HEADER IMPORTADO -->

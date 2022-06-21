@@ -1,0 +1,29 @@
+@import "/public/css/0_general.css";
+
+/** NAVBAR-SUPERIOR **/
+.navbar-superior{
+    color: var(--verde4);
+    text-align: end;
+    padding-right: 3.0%;
+}
+/** NAVBAR-INFERIOR **/
+.navbar-inferior{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    background-color: #101010;
+}
+
+/** LOGO GAME-SCRIPT **/
+.logo_container{
+    padding-left: 2%;
+    font-family: "Montserrat";
+}
+.navBar-enlaces{  
+    padding-right: 2%;
+}
+    @media (min-width:  576px) {
+        .navBar-enlaces{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }

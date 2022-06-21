@@ -1,0 +1,528 @@
+<head>
+    <link rel="stylesheet" href="/public/css/3_playroom.css">
+</head>
+
+<main class="background-main contenedor-main">
+
+    <!-- PRIMERA FILA -->
+    <!-- CONTENEDOR PRIMERA FILA -->
+    <div class="row">
+      <!-- CONTENEDOR TABLERO -->
+      <div class="col-sm contenedor-tablero">
+        <!-- style="border: solid red-->
+        <div class="div-tablero">
+          <!-- CONTENEDOR CRONOMETRO -->
+          <div class="container contenedor-cronometro">
+            <table class="tabla-encabezado">
+              <tr class="cronometro">
+                <th>Tiempo</th>
+                <th>Turno</th>
+                <th></th>
+              </tr>
+
+              <tr class="turno">
+                <td class="cronometroPartida"><span id="seconds">00</span> s</td>
+                <td id="turnoPartida">X</td>
+                <td>
+                  <a href="JavaScript:window.close()">
+                    <button type="submit">Salir</button>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div> <!-- /CONTENEDOR CRONOMETRO -->
+
+        <!--CONTENEDOR SCORE -->
+        <table class="container-fluid tabla-tabla-score">
+          <tr class="trScoreHead">
+            <th>User</th>
+            <th>User</th>
+            <th>User</th>
+            <th>User</th>
+          </tr>
+          <tr class="trScoreContenido">
+            <td>Score</td>
+            <td>Score</td>
+            <td>Score</td>
+            <td>Score</td>
+          </tr>
+        </table>
+        <!--/CONTENEDOR SCORE -->
+                    <table class="tablero">
+                      <tr>
+                        <td id="c019" onclick="capturarSiSePuede(0,19)"></td>
+                        <td id="c119" onclick="capturarSiSePuede(1,19)"></td>
+                        <td id="c219" onclick="capturarSiSePuede(2,19)"></td>
+                        <td id="c319" onclick="capturarSiSePuede(3,19)"></td>
+                        <td id="c419" onclick="capturarSiSePuede(4,19)"></td>
+                        <td id="c519" onclick="capturarSiSePuede(5,19)"></td>
+                        <td id="c619" onclick="capturarSiSePuede(6,19)"></td>
+                        <td id="c719" onclick="capturarSiSePuede(7,19)"></td>
+                        <td id="c819" onclick="capturarSiSePuede(8,19)"></td>
+                        <td id="c919" onclick="capturarSiSePuede(9,19)"></td>
+                        <td id="c1019" onclick="capturarSiSePuede(10,19)"></td>
+                        <td id="c1119" onclick="capturarSiSePuede(11,19)"></td>
+                        <td id="c1219" onclick="capturarSiSePuede(12,19)"></td>
+                        <td id="c1319" onclick="capturarSiSePuede(13,19)"></td>
+                        <td id="c1419" onclick="capturarSiSePuede(14,19)"></td>
+                        <td id="c1519" onclick="capturarSiSePuede(15,19)"></td>
+                        <td id="c1619" onclick="capturarSiSePuede(16,19)"></td>
+                        <td id="c1719" onclick="capturarSiSePuede(17,19)"></td>
+                        <td id="c1819" onclick="capturarSiSePuede(18,19)"></td>
+                        <td id="c1919" onclick="capturarSiSePuede(19,19)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c018" onclick="capturarSiSePuede(0,18)"></td>
+                        <td id="c118" onclick="capturarSiSePuede(1,18)"></td>
+                        <td id="c218" onclick="capturarSiSePuede(2,18)"></td>
+                        <td id="c318" onclick="capturarSiSePuede(3,18)"></td>
+                        <td id="c418" onclick="capturarSiSePuede(4,18)"></td>
+                        <td id="c518" onclick="capturarSiSePuede(5,18)"></td>
+                        <td id="c618" onclick="capturarSiSePuede(6,18)"></td>
+                        <td id="c718" onclick="capturarSiSePuede(7,18)"></td>
+                        <td id="c818" onclick="capturarSiSePuede(8,18)"></td>
+                        <td id="c918" onclick="capturarSiSePuede(9,18)"></td>
+                        <td id="c1018" onclick="capturarSiSePuede(10,18)"></td>
+                        <td id="c1118" onclick="capturarSiSePuede(11,18)"></td>
+                        <td id="c1218" onclick="capturarSiSePuede(12,18)"></td>
+                        <td id="c1318" onclick="capturarSiSePuede(13,18)"></td>
+                        <td id="c1418" onclick="capturarSiSePuede(14,18)"></td>
+                        <td id="c1518" onclick="capturarSiSePuede(15,18)"></td>
+                        <td id="c1618" onclick="capturarSiSePuede(16,18)"></td>
+                        <td id="c1718" onclick="capturarSiSePuede(17,18)"></td>
+                        <td id="c1818" onclick="capturarSiSePuede(18,18)"></td>
+                        <td id="c1918" onclick="capturarSiSePuede(19,18)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c017" onclick="capturarSiSePuede(0,17)"></td>
+                        <td id="c117" onclick="capturarSiSePuede(1,17)"></td>
+                        <td id="c217" onclick="capturarSiSePuede(2,17)"></td>
+                        <td id="c317" onclick="capturarSiSePuede(3,17)"></td>
+                        <td id="c417" onclick="capturarSiSePuede(4,17)"></td>
+                        <td id="c517" onclick="capturarSiSePuede(5,17)"></td>
+                        <td id="c617" onclick="capturarSiSePuede(6,17)"></td>
+                        <td id="c717" onclick="capturarSiSePuede(7,17)"></td>
+                        <td id="c817" onclick="capturarSiSePuede(8,17)"></td>
+                        <td id="c917" onclick="capturarSiSePuede(9,17)"></td>
+                        <td id="c1017" onclick="capturarSiSePuede(10,17)"></td>
+                        <td id="c1117" onclick="capturarSiSePuede(11,17)"></td>
+                        <td id="c1217" onclick="capturarSiSePuede(12,17)"></td>
+                        <td id="c1317" onclick="capturarSiSePuede(13,17)"></td>
+                        <td id="c1417" onclick="capturarSiSePuede(14,17)"></td>
+                        <td id="c1517" onclick="capturarSiSePuede(15,17)"></td>
+                        <td id="c1617" onclick="capturarSiSePuede(16,17)"></td>
+                        <td id="c1717" onclick="capturarSiSePuede(17,17)"></td>
+                        <td id="c1817" onclick="capturarSiSePuede(18,17)"></td>
+                        <td id="c1917" onclick="capturarSiSePuede(19,17)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c016" onclick="capturarSiSePuede(0,16)"></td>
+                        <td id="c116" onclick="capturarSiSePuede(1,16)"></td>
+                        <td id="c216" onclick="capturarSiSePuede(2,16)"></td>
+                        <td id="c316" onclick="capturarSiSePuede(3,16)"></td>
+                        <td id="c416" onclick="capturarSiSePuede(4,16)"></td>
+                        <td id="c516" onclick="capturarSiSePuede(5,16)"></td>
+                        <td id="c616" onclick="capturarSiSePuede(6,16)"></td>
+                        <td id="c716" onclick="capturarSiSePuede(7,16)"></td>
+                        <td id="c816" onclick="capturarSiSePuede(8,16)"></td>
+                        <td id="c916" onclick="capturarSiSePuede(9,16)"></td>
+                        <td id="c1016" onclick="capturarSiSePuede(10,16)"></td>
+                        <td id="c1116" onclick="capturarSiSePuede(11,16)"></td>
+                        <td id="c1216" onclick="capturarSiSePuede(12,16)"></td>
+                        <td id="c1316" onclick="capturarSiSePuede(13,16)"></td>
+                        <td id="c1416" onclick="capturarSiSePuede(14,16)"></td>
+                        <td id="c1516" onclick="capturarSiSePuede(15,16)"></td>
+                        <td id="c1616" onclick="capturarSiSePuede(16,16)"></td>
+                        <td id="c1716" onclick="capturarSiSePuede(17,16)"></td>
+                        <td id="c1816" onclick="capturarSiSePuede(18,16)"></td>
+                        <td id="c1916" onclick="capturarSiSePuede(19,16)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c015" onclick="capturarSiSePuede(0,15)"></td>
+                        <td id="c115" onclick="capturarSiSePuede(1,15)"></td>
+                        <td id="c215" onclick="capturarSiSePuede(2,15)"></td>
+                        <td id="c315" onclick="capturarSiSePuede(3,15)"></td>
+                        <td id="c415" onclick="capturarSiSePuede(4,15)"></td>
+                        <td id="c515" onclick="capturarSiSePuede(5,15)"></td>
+                        <td id="c615" onclick="capturarSiSePuede(6,15)"></td>
+                        <td id="c715" onclick="capturarSiSePuede(7,15)"></td>
+                        <td id="c815" onclick="capturarSiSePuede(8,15)"></td>
+                        <td id="c915" onclick="capturarSiSePuede(9,15)"></td>
+                        <td id="c1015" onclick="capturarSiSePuede(10,15)"></td>
+                        <td id="c1115" onclick="capturarSiSePuede(11,15)"></td>
+                        <td id="c1215" onclick="capturarSiSePuede(12,15)"></td>
+                        <td id="c1315" onclick="capturarSiSePuede(13,15)"></td>
+                        <td id="c1415" onclick="capturarSiSePuede(14,15)"></td>
+                        <td id="c1515" onclick="capturarSiSePuede(15,15)"></td>
+                        <td id="c1615" onclick="capturarSiSePuede(16,15)"></td>
+                        <td id="c1715" onclick="capturarSiSePuede(17,15)"></td>
+                        <td id="c1815" onclick="capturarSiSePuede(18,15)"></td>
+                        <td id="c1915" onclick="capturarSiSePuede(19,15)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c014" onclick="capturarSiSePuede(0,14)"></td>
+                        <td id="c114" onclick="capturarSiSePuede(1,14)"></td>
+                        <td id="c214" onclick="capturarSiSePuede(2,14)"></td>
+                        <td id="c314" onclick="capturarSiSePuede(3,14)"></td>
+                        <td id="c414" onclick="capturarSiSePuede(4,14)"></td>
+                        <td id="c514" onclick="capturarSiSePuede(5,14)"></td>
+                        <td id="c614" onclick="capturarSiSePuede(6,14)"></td>
+                        <td id="c714" onclick="capturarSiSePuede(7,14)"></td>
+                        <td id="c814" onclick="capturarSiSePuede(8,14)"></td>
+                        <td id="c914" onclick="capturarSiSePuede(9,14)"></td>
+                        <td id="c1014" onclick="capturarSiSePuede(10,14)"></td>
+                        <td id="c1114" onclick="capturarSiSePuede(11,14)"></td>
+                        <td id="c1214" onclick="capturarSiSePuede(12,14)"></td>
+                        <td id="c1314" onclick="capturarSiSePuede(13,14)"></td>
+                        <td id="c1414" onclick="capturarSiSePuede(14,14)"></td>
+                        <td id="c1514" onclick="capturarSiSePuede(15,14)"></td>
+                        <td id="c1614" onclick="capturarSiSePuede(16,14)"></td>
+                        <td id="c1714" onclick="capturarSiSePuede(17,14)"></td>
+                        <td id="c1814" onclick="capturarSiSePuede(18,14)"></td>
+                        <td id="c1914" onclick="capturarSiSePuede(19,14)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c013" onclick="capturarSiSePuede(0,13)"></td>
+                        <td id="c113" onclick="capturarSiSePuede(1,13)"></td>
+                        <td id="c213" onclick="capturarSiSePuede(2,13)"></td>
+                        <td id="c313" onclick="capturarSiSePuede(3,13)"></td>
+                        <td id="c413" onclick="capturarSiSePuede(4,13)"></td>
+                        <td id="c513" onclick="capturarSiSePuede(5,13)"></td>
+                        <td id="c613" onclick="capturarSiSePuede(6,13)"></td>
+                        <td id="c713" onclick="capturarSiSePuede(7,13)"></td>
+                        <td id="c813" onclick="capturarSiSePuede(8,13)"></td>
+                        <td id="c913" onclick="capturarSiSePuede(9,13)"></td>
+                        <td id="c1013" onclick="capturarSiSePuede(10,13)"></td>
+                        <td id="c1113" onclick="capturarSiSePuede(11,13)"></td>
+                        <td id="c1213" onclick="capturarSiSePuede(12,13)"></td>
+                        <td id="c1313" onclick="capturarSiSePuede(13,13)"></td>
+                        <td id="c1413" onclick="capturarSiSePuede(14,13)"></td>
+                        <td id="c1513" onclick="capturarSiSePuede(15,13)"></td>
+                        <td id="c1613" onclick="capturarSiSePuede(16,13)"></td>
+                        <td id="c1713" onclick="capturarSiSePuede(17,13)"></td>
+                        <td id="c1813" onclick="capturarSiSePuede(18,13)"></td>
+                        <td id="c1913" onclick="capturarSiSePuede(19,13)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c012" onclick="capturarSiSePuede(0,12)"></td>
+                        <td id="c112" onclick="capturarSiSePuede(1,12)"></td>
+                        <td id="c212" onclick="capturarSiSePuede(2,12)"></td>
+                        <td id="c312" onclick="capturarSiSePuede(3,12)"></td>
+                        <td id="c412" onclick="capturarSiSePuede(4,12)"></td>
+                        <td id="c512" onclick="capturarSiSePuede(5,12)"></td>
+                        <td id="c612" onclick="capturarSiSePuede(6,12)"></td>
+                        <td id="c712" onclick="capturarSiSePuede(7,12)"></td>
+                        <td id="c812" onclick="capturarSiSePuede(8,12)"></td>
+                        <td id="c912" onclick="capturarSiSePuede(9,12)"></td>
+                        <td id="c1012" onclick="capturarSiSePuede(10,12)"></td>
+                        <td id="c1112" onclick="capturarSiSePuede(11,12)"></td>
+                        <td id="c1212" onclick="capturarSiSePuede(12,12)"></td>
+                        <td id="c1312" onclick="capturarSiSePuede(13,12)"></td>
+                        <td id="c1412" onclick="capturarSiSePuede(14,12)"></td>
+                        <td id="c1512" onclick="capturarSiSePuede(15,12)"></td>
+                        <td id="c1612" onclick="capturarSiSePuede(16,12)"></td>
+                        <td id="c1712" onclick="capturarSiSePuede(17,12)"></td>
+                        <td id="c1812" onclick="capturarSiSePuede(18,12)"></td>
+                        <td id="c1912" onclick="capturarSiSePuede(19,12)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c011" onclick="capturarSiSePuede(0,11)"></td>
+                        <td id="c111" onclick="capturarSiSePuede(1,11)"></td>
+                        <td id="c211" onclick="capturarSiSePuede(2,11)"></td>
+                        <td id="c311" onclick="capturarSiSePuede(3,11)"></td>
+                        <td id="c411" onclick="capturarSiSePuede(4,11)"></td>
+                        <td id="c511" onclick="capturarSiSePuede(5,11)"></td>
+                        <td id="c611" onclick="capturarSiSePuede(6,11)"></td>
+                        <td id="c711" onclick="capturarSiSePuede(7,11)"></td>
+                        <td id="c811" onclick="capturarSiSePuede(8,11)"></td>
+                        <td id="c911" onclick="capturarSiSePuede(9,11)"></td>
+                        <td id="c1011" onclick="capturarSiSePuede(10,11)"></td>
+                        <td id="c1111" onclick="capturarSiSePuede(11,11)"></td>
+                        <td id="c1211" onclick="capturarSiSePuede(12,11)"></td>
+                        <td id="c1311" onclick="capturarSiSePuede(13,11)"></td>
+                        <td id="c1411" onclick="capturarSiSePuede(14,11)"></td>
+                        <td id="c1511" onclick="capturarSiSePuede(15,11)"></td>
+                        <td id="c1611" onclick="capturarSiSePuede(16,11)"></td>
+                        <td id="c1711" onclick="capturarSiSePuede(17,11)"></td>
+                        <td id="c1811" onclick="capturarSiSePuede(18,11)"></td>
+                        <td id="c1911" onclick="capturarSiSePuede(19,11)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c010" onclick="capturarSiSePuede(0,10)"></td>
+                        <td id="c110" onclick="capturarSiSePuede(1,10)"></td>
+                        <td id="c210" onclick="capturarSiSePuede(2,10)"></td>
+                        <td id="c310" onclick="capturarSiSePuede(3,10)"></td>
+                        <td id="c410" onclick="capturarSiSePuede(4,10)"></td>
+                        <td id="c510" onclick="capturarSiSePuede(5,10)"></td>
+                        <td id="c610" onclick="capturarSiSePuede(6,10)"></td>
+                        <td id="c710" onclick="capturarSiSePuede(7,10)"></td>
+                        <td id="c810" onclick="capturarSiSePuede(8,10)"></td>
+                        <td id="c910" onclick="capturarSiSePuede(9,10)"></td>
+                        <td id="c1010" onclick="capturarSiSePuede(10,10)"></td>
+                        <td id="c1110" onclick="capturarSiSePuede(11,10)"></td>
+                        <td id="c1210" onclick="capturarSiSePuede(12,10)"></td>
+                        <td id="c1310" onclick="capturarSiSePuede(13,10)"></td>
+                        <td id="c1410" onclick="capturarSiSePuede(14,10)"></td>
+                        <td id="c1510" onclick="capturarSiSePuede(15,10)"></td>
+                        <td id="c1610" onclick="capturarSiSePuede(16,10)"></td>
+                        <td id="c1710" onclick="capturarSiSePuede(17,10)"></td>
+                        <td id="c1810" onclick="capturarSiSePuede(18,10)"></td>
+                        <td id="c1910" onclick="capturarSiSePuede(10,10)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c09" onclick="capturarSiSePuede(0,9)"></td>
+                        <td id="c19" onclick="capturarSiSePuede(1,9)"></td>
+                        <td id="c29" onclick="capturarSiSePuede(2,9)"></td>
+                        <td id="c39" onclick="capturarSiSePuede(3,9)"></td>
+                        <td id="c49" onclick="capturarSiSePuede(4,9)"></td>
+                        <td id="c59" onclick="capturarSiSePuede(5,9)"></td>
+                        <td id="c69" onclick="capturarSiSePuede(6,9)"></td>
+                        <td id="c79" onclick="capturarSiSePuede(7,9)"></td>
+                        <td id="c89" onclick="capturarSiSePuede(8,9)"></td>
+                        <td id="c99" onclick="capturarSiSePuede(9,9)"></td>
+                        <td id="c109" onclick="capturarSiSePuede(10,9)"></td>
+                        <td id="c119" onclick="capturarSiSePuede(11,9)"></td>
+                        <td id="c129" onclick="capturarSiSePuede(12,9)"></td>
+                        <td id="c139" onclick="capturarSiSePuede(13,9)"></td>
+                        <td id="c149" onclick="capturarSiSePuede(14,9)"></td>
+                        <td id="c159" onclick="capturarSiSePuede(15,9)"></td>
+                        <td id="c169" onclick="capturarSiSePuede(16,9)"></td>
+                        <td id="c179" onclick="capturarSiSePuede(17,9)"></td>
+                        <td id="c189" onclick="capturarSiSePuede(18,9)"></td>
+                        <td id="c199" onclick="capturarSiSePuede(19,9)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c08" onclick="capturarSiSePuede(0,8)"></td>
+                        <td id="c18" onclick="capturarSiSePuede(1,8)"></td>
+                        <td id="c28" onclick="capturarSiSePuede(2,8)"></td>
+                        <td id="c38" onclick="capturarSiSePuede(3,8)"></td>
+                        <td id="c48" onclick="capturarSiSePuede(4,8)"></td>
+                        <td id="c58" onclick="capturarSiSePuede(5,8)"></td>
+                        <td id="c68" onclick="capturarSiSePuede(6,8)"></td>
+                        <td id="c78" onclick="capturarSiSePuede(7,8)"></td>
+                        <td id="c88" onclick="capturarSiSePuede(8,8)"></td>
+                        <td id="c98" onclick="capturarSiSePuede(9,8)"></td>
+                        <td id="c108" onclick="capturarSiSePuede(10,8)"></td>
+                        <td id="c118" onclick="capturarSiSePuede(11,8)"></td>
+                        <td id="c128" onclick="capturarSiSePuede(12,8)"></td>
+                        <td id="c138" onclick="capturarSiSePuede(13,8)"></td>
+                        <td id="c148" onclick="capturarSiSePuede(14,8)"></td>
+                        <td id="c158" onclick="capturarSiSePuede(15,8)"></td>
+                        <td id="c168" onclick="capturarSiSePuede(16,8)"></td>
+                        <td id="c178" onclick="capturarSiSePuede(17,8)"></td>
+                        <td id="c188" onclick="capturarSiSePuede(18,8)"></td>
+                        <td id="c198" onclick="capturarSiSePuede(19,8)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c07" onclick="capturarSiSePuede(0,7)"></td>
+                        <td id="c17" onclick="capturarSiSePuede(1,7)"></td>
+                        <td id="c27" onclick="capturarSiSePuede(2,7)"></td>
+                        <td id="c37" onclick="capturarSiSePuede(3,7)"></td>
+                        <td id="c47" onclick="capturarSiSePuede(4,7)"></td>
+                        <td id="c57" onclick="capturarSiSePuede(5,7)"></td>
+                        <td id="c67" onclick="capturarSiSePuede(6,7)"></td>
+                        <td id="c77" onclick="capturarSiSePuede(7,7)"></td>
+                        <td id="c87" onclick="capturarSiSePuede(8,7)"></td>
+                        <td id="c97" onclick="capturarSiSePuede(9,7)"></td>
+                        <td id="c107" onclick="capturarSiSePuede(10,7)"></td>
+                        <td id="c117" onclick="capturarSiSePuede(11,7)"></td>
+                        <td id="c127" onclick="capturarSiSePuede(12,7)"></td>
+                        <td id="c137" onclick="capturarSiSePuede(13,7)"></td>
+                        <td id="c147" onclick="capturarSiSePuede(14,7)"></td>
+                        <td id="c157" onclick="capturarSiSePuede(15,7)"></td>
+                        <td id="c167" onclick="capturarSiSePuede(16,7)"></td>
+                        <td id="c177" onclick="capturarSiSePuede(17,7)"></td>
+                        <td id="c187" onclick="capturarSiSePuede(18,7)"></td>
+                        <td id="c197" onclick="capturarSiSePuede(19,7)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c06" onclick="capturarSiSePuede(0,6)"></td>
+                        <td id="c16" onclick="capturarSiSePuede(1,6)"></td>
+                        <td id="c26" onclick="capturarSiSePuede(2,6)"></td>
+                        <td id="c36" onclick="capturarSiSePuede(3,6)"></td>
+                        <td id="c46" onclick="capturarSiSePuede(4,6)"></td>
+                        <td id="c56" onclick="capturarSiSePuede(5,6)"></td>
+                        <td id="c66" onclick="capturarSiSePuede(6,6)"></td>
+                        <td id="c76" onclick="capturarSiSePuede(7,6)"></td>
+                        <td id="c86" onclick="capturarSiSePuede(8,6)"></td>
+                        <td id="c96" onclick="capturarSiSePuede(9,6)"></td>
+                        <td id="c106" onclick="capturarSiSePuede(10,6)"></td>
+                        <td id="c116" onclick="capturarSiSePuede(11,6)"></td>
+                        <td id="c126" onclick="capturarSiSePuede(12,6)"></td>
+                        <td id="c136" onclick="capturarSiSePuede(13,6)"></td>
+                        <td id="c146" onclick="capturarSiSePuede(14,6)"></td>
+                        <td id="c156" onclick="capturarSiSePuede(15,6)"></td>
+                        <td id="c166" onclick="capturarSiSePuede(16,6)"></td>
+                        <td id="c176" onclick="capturarSiSePuede(17,6)"></td>
+                        <td id="c186" onclick="capturarSiSePuede(18,6)"></td>
+                        <td id="c196" onclick="capturarSiSePuede(19,6)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c05" onclick="capturarSiSePuede(0,5)"></td>
+                        <td id="c15" onclick="capturarSiSePuede(1,5)"></td>
+                        <td id="c25" onclick="capturarSiSePuede(2,5)"></td>
+                        <td id="c35" onclick="capturarSiSePuede(3,5)"></td>
+                        <td id="c45" onclick="capturarSiSePuede(4,5)"></td>
+                        <td id="c55" onclick="capturarSiSePuede(5,5)"></td>
+                        <td id="c65" onclick="capturarSiSePuede(6,5)"></td>
+                        <td id="c75" onclick="capturarSiSePuede(7,5)"></td>
+                        <td id="c85" onclick="capturarSiSePuede(8,5)"></td>
+                        <td id="c95" onclick="capturarSiSePuede(9,5)"></td>
+                        <td id="c105" onclick="capturarSiSePuede(10,5)"></td>
+                        <td id="c115" onclick="capturarSiSePuede(11,5)"></td>
+                        <td id="c125" onclick="capturarSiSePuede(12,5)"></td>
+                        <td id="c135" onclick="capturarSiSePuede(13,5)"></td>
+                        <td id="c145" onclick="capturarSiSePuede(14,5)"></td>
+                        <td id="c155" onclick="capturarSiSePuede(15,5)"></td>
+                        <td id="c165" onclick="capturarSiSePuede(16,5)"></td>
+                        <td id="c175" onclick="capturarSiSePuede(17,5)"></td>
+                        <td id="c185" onclick="capturarSiSePuede(18,5)"></td>
+                        <td id="c195" onclick="capturarSiSePuede(19,5)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c04" onclick="capturarSiSePuede(0,4)"></td>
+                        <td id="c14" onclick="capturarSiSePuede(1,4)"></td>
+                        <td id="c24" onclick="capturarSiSePuede(2,4)"></td>
+                        <td id="c34" onclick="capturarSiSePuede(3,4)"></td>
+                        <td id="c44" onclick="capturarSiSePuede(4,4)"></td>
+                        <td id="c54" onclick="capturarSiSePuede(5,4)"></td>
+                        <td id="c64" onclick="capturarSiSePuede(6,4)"></td>
+                        <td id="c74" onclick="capturarSiSePuede(7,4)"></td>
+                        <td id="c84" onclick="capturarSiSePuede(8,4)"></td>
+                        <td id="c94" onclick="capturarSiSePuede(9,4)"></td>
+                        <td id="c104" onclick="capturarSiSePuede(10,4)"></td>
+                        <td id="c114" onclick="capturarSiSePuede(11,4)"></td>
+                        <td id="c124" onclick="capturarSiSePuede(12,4)"></td>
+                        <td id="c134" onclick="capturarSiSePuede(13,4)"></td>
+                        <td id="c144" onclick="capturarSiSePuede(14,4)"></td>
+                        <td id="c154" onclick="capturarSiSePuede(15,4)"></td>
+                        <td id="c164" onclick="capturarSiSePuede(16,4)"></td>
+                        <td id="c174" onclick="capturarSiSePuede(17,4)"></td>
+                        <td id="c184" onclick="capturarSiSePuede(18,4)"></td>
+                        <td id="c194" onclick="capturarSiSePuede(19,4)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c03" onclick="capturarSiSePuede(0,3)"></td>
+                        <td id="c13" onclick="capturarSiSePuede(1,3)"></td>
+                        <td id="c23" onclick="capturarSiSePuede(2,3)"></td>
+                        <td id="c33" onclick="capturarSiSePuede(3,3)"></td>
+                        <td id="c43" onclick="capturarSiSePuede(4,3)"></td>
+                        <td id="c53" onclick="capturarSiSePuede(5,3)"></td>
+                        <td id="c63" onclick="capturarSiSePuede(6,3)"></td>
+                        <td id="c73" onclick="capturarSiSePuede(7,3)"></td>
+                        <td id="c83" onclick="capturarSiSePuede(8,3)"></td>
+                        <td id="c93" onclick="capturarSiSePuede(9,3)"></td>
+                        <td id="c103" onclick="capturarSiSePuede(10,3)"></td>
+                        <td id="c113" onclick="capturarSiSePuede(11,3)"></td>
+                        <td id="c123" onclick="capturarSiSePuede(12,3)"></td>
+                        <td id="c133" onclick="capturarSiSePuede(13,3)"></td>
+                        <td id="c143" onclick="capturarSiSePuede(14,3)"></td>
+                        <td id="c153" onclick="capturarSiSePuede(15,3)"></td>
+                        <td id="c163" onclick="capturarSiSePuede(16,3)"></td>
+                        <td id="c173" onclick="capturarSiSePuede(17,3)"></td>
+                        <td id="c183" onclick="capturarSiSePuede(18,3)"></td>
+                        <td id="c193" onclick="capturarSiSePuede(19,3)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c02" onclick="capturarSiSePuede(0,2)"></td>
+                        <td id="c12" onclick="capturarSiSePuede(1,2)"></td>
+                        <td id="c22" onclick="capturarSiSePuede(2,2)"></td>
+                        <td id="c32" onclick="capturarSiSePuede(3,2)"></td>
+                        <td id="c42" onclick="capturarSiSePuede(4,2)"></td>
+                        <td id="c52" onclick="capturarSiSePuede(5,2)"></td>
+                        <td id="c62" onclick="capturarSiSePuede(6,2)"></td>
+                        <td id="c72" onclick="capturarSiSePuede(7,2)"></td>
+                        <td id="c82" onclick="capturarSiSePuede(8,2)"></td>
+                        <td id="c92" onclick="capturarSiSePuede(9,2)"></td>
+                        <td id="c102" onclick="capturarSiSePuede(10,2)"></td>
+                        <td id="c112" onclick="capturarSiSePuede(11,2)"></td>
+                        <td id="c122" onclick="capturarSiSePuede(12,2)"></td>
+                        <td id="c132" onclick="capturarSiSePuede(13,2)"></td>
+                        <td id="c142" onclick="capturarSiSePuede(14,2)"></td>
+                        <td id="c152" onclick="capturarSiSePuede(15,2)"></td>
+                        <td id="c162" onclick="capturarSiSePuede(16,2)"></td>
+                        <td id="c172" onclick="capturarSiSePuede(17,2)"></td>
+                        <td id="c182" onclick="capturarSiSePuede(18,2)"></td>
+                        <td id="c192" onclick="capturarSiSePuede(19,2)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c01" onclick="capturarSiSePuede(0,1)"></td>
+                        <td id="c11" onclick="capturarSiSePuede(1,1)"></td>
+                        <td id="c21" onclick="capturarSiSePuede(2,1)"></td>
+                        <td id="c31" onclick="capturarSiSePuede(3,1)"></td>
+                        <td id="c41" onclick="capturarSiSePuede(4,1)"></td>
+                        <td id="c51" onclick="capturarSiSePuede(5,1)"></td>
+                        <td id="c61" onclick="capturarSiSePuede(6,1)"></td>
+                        <td id="c71" onclick="capturarSiSePuede(7,1)"></td>
+                        <td id="c81" onclick="capturarSiSePuede(8,1)"></td>
+                        <td id="c91" onclick="capturarSiSePuede(9,1)"></td>
+                        <td id="c101" onclick="capturarSiSePuede(10,1)"></td>
+                        <td id="c111" onclick="capturarSiSePuede(11,1)"></td>
+                        <td id="c121" onclick="capturarSiSePuede(12,1)"></td>
+                        <td id="c131" onclick="capturarSiSePuede(13,1)"></td>
+                        <td id="c141" onclick="capturarSiSePuede(14,1)"></td>
+                        <td id="c151" onclick="capturarSiSePuede(15,1)"></td>
+                        <td id="c161" onclick="capturarSiSePuede(16,1)"></td>
+                        <td id="c171" onclick="capturarSiSePuede(17,1)"></td>
+                        <td id="c181" onclick="capturarSiSePuede(18,1)"></td>
+                        <td id="c191" onclick="capturarSiSePuede(19,1)"></td>
+                      </tr>
+                      <tr>
+                        <td id="c00" onclick="capturarSiSePuede(0,0)"></td>
+                        <td id="c10" onclick="capturarSiSePuede(1,0)"></td>
+                        <td id="c20" onclick="capturarSiSePuede(2,0)"></td>
+                        <td id="c30" onclick="capturarSiSePuede(3,0)"></td>
+                        <td id="c40" onclick="capturarSiSePuede(4,0)"></td>
+                        <td id="c50" onclick="capturarSiSePuede(5,0)"></td>
+                        <td id="c60" onclick="capturarSiSePuede(6,0)"></td>
+                        <td id="c70" onclick="capturarSiSePuede(7,0)"></td>
+                        <td id="c80" onclick="capturarSiSePuede(8,0)"></td>
+                        <td id="c90" onclick="capturarSiSePuede(9,0)"></td>
+                        <td id="c100" onclick="capturarSiSePuede(10,0)"></td>
+                        <td id="c110" onclick="capturarSiSePuede(11,0)"></td>
+                        <td id="c120" onclick="capturarSiSePuede(12,0)"></td>
+                        <td id="c130" onclick="capturarSiSePuede(13,0)"></td>
+                        <td id="c140" onclick="capturarSiSePuede(14,0)"></td>
+                        <td id="c150" onclick="capturarSiSePuede(15,0)"></td>
+                        <td id="c160" onclick="capturarSiSePuede(16,0)"></td>
+                        <td id="c170" onclick="capturarSiSePuede(17,0)"></td>
+                        <td id="c180" onclick="capturarSiSePuede(18,0)"></td>
+                        <td id="c190" onclick="capturarSiSePuede(19,0)"></td>
+                      </tr>
+                    </table>
+                </div>
+            </div>  <!-- /CONTENEDOR TABLERO -->
+
+        <!-- CONTENEDOR CHAT -->
+
+        <div id="chat-container">
+          <div id="chat-window">
+            <div id="output"></div>
+            <div id="actions"></div>
+          </div>
+          <input type="text" id="username" placeholder="Username">
+          <input type="text" id="message" placeholder="Message">
+          <button class="butoner" id="send">Send</button>
+        </div>
+      </div>
+    </div>
+    </div> <!-- /FILA1-COLUMNA2 -->
+    </div> <!-- /CONTENEDOR PRIMERA FILA -->
+</main>
+
+<!-- SCRIPTS -->
+  <!-- IMPORT CLASES JULIO -->
+  <script src="/public/js/clases/play.js"></script>
+  <script src="/public/js/clases/Partida.js"></script>
+  <script src="/public/js/clases/TableroJuego.js"></script>
+  <script src="/public/js/clases/Casilla.js"></script>
+  <script src="/public/js/clases/Jugador.js"></script>
+  <!-- IMPORT CLASES KEVIN -->
+  <script src="/public/js/clases/cronometro.js"></script>
+  <script src="/public/js/clases/playCronometro.js"></script>
+  <script src="/public/js/clases/turno.js"></script>
+  <script src="/public/js/clases/playTurno.js"></script>
+  <!--WEBSOCKETS-->
+ <script src="/socket.io/socket.io.min.js"></script>
+  <script src="/public/js/helpers/cliente.js"></script>
+  

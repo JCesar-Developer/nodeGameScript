@@ -1,0 +1,224 @@
+@import "0_general.css";
+/*CONTENEDOR MAIN*/
+.contenedor-main{
+    padding-bottom: 40px;
+}
+
+/*SECCION QUE COMPRENDE TABLERO Y CHAT*/
+.container-principal{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.div-tablero{
+    
+    justify-content: center;
+}
+
+
+/*TABLERO DE JUEGO*/
+.contenedor-tablero{
+    display: flex;
+    justify-content: center;
+}
+
+.tablero{
+    width: 750px;
+	height: 750px;
+    border-collapse: collapse;
+    border-radius: 0.8em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 52px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*MEDIA Q QUE AJUSTAN TABLERO EN RESPONSIVE*/
+    @media (max-width:  480px) {
+        .tablero{
+            width: 300px;
+            height: 300px;
+            border-collapse: collapse;
+            border-radius: 0.8em;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    } 
+    @media (max-width:  1376px) {
+        .tablero{
+            margin:auto;
+            margin-top: 30px;
+        }
+    } 
+    @media (max-width:  785px) {
+        .tablero{
+            margin:auto;
+            margin-top: 30px;
+            width: 500px;
+            height: 500px;
+        }
+    }
+    @media (max-width:  538px) {
+        .tablero{
+            margin:auto;
+            margin-top: 30px;
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+
+    /*COLORES PARA BORDES DE TABLEROS*/
+    .tablero tr{
+        border: 1px solid rgb(138, 114, 114);
+        border-bottom: 3px solid rgb(15, 15, 15);    
+    }
+    .tablero td{
+        border: 1px solid rgb(138, 114, 114);  
+        border-bottom: 2px solid rgb(15, 15, 15);    
+    }
+
+
+/*DIVISION QUE RECOGE TABLA TIEMPO Y CHAT*/
+.contenedor-columna2 {
+    display: grid;
+}
+
+/*TABLA DE TIEMPO Y TURNO*/
+.contenedor-cronometro{
+    display: flex;
+    justify-content: center;
+}
+.tabla-encabezado{    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    @media (min-width:  480px) {
+        .tabla-encabezado{    
+            width: 680px;
+            height: 100px;
+        }
+    }  
+    @media (max-width:  480px) {
+        .tabla-encabezado{    
+            width: 420px;
+            height: 100px;
+        }
+    }
+    @media (max-width:  380px) {
+        .tabla-encabezado{    
+            width: 350px;
+            height: 100px;
+        }
+    } 
+
+    /*COLORES PARA BORDES TABLA TIEMPO Y TURNO*/
+    .tabla-encabezado tr,td{
+        border: 1px solid rgb(5, 5, 5);
+        border-bottom: 3px solid rgb(5, 5, 5);
+        color: white;
+        background-color:var(--verde2);
+    }
+    .tabla-encabezado td{
+        border: 1px solid rgb(5, 5, 5);
+        border-bottom: 3px solid rgb(5, 5, 5);
+    }
+
+/*SECCION QUE CONTIENE TABLA SCORE*/
+.tabla-score{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/*TABLA USUARIO SCORE*/
+.tabla-tabla-score{  /*PURPLE*/
+    max-width: 500px;
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;   
+}
+    @media (max-width:  480px) {
+    .tabla-tabla-score{
+        width: 350px;
+        display:flex;
+        justify-content: center;
+        margin-top: 20px;   
+        }
+    }
+
+.tabla-tabla-score th{
+    border: 1px solid rgb(0, 0, 0);  
+    border-bottom: 2px solid rgb(15, 15, 15);
+    background-color: var(--verde1);
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+.tabla-tabla-score td{
+    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(15, 15, 15); 
+    background-color: var(--verde4);
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+
+/*CHAT*/
+.contenedor-chat{
+    /*border: solid pink;*/
+    display: flex;
+    justify-content: center;
+}
+.card{ /*CONTENEDOR DE LA IMAGEN DEL CHAT*/
+    height: 600px;
+    width: 500px;    
+}
+    @media (max-width: 480px) {
+        .card{
+            width: 350px;    
+            height: 650px;
+        }
+    }  
+
+/*CSS CHAT*/
+    #chat-container {
+        max-width: 600px;
+        margin: 30px auto;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+      }
+      
+      #chat-window {
+          border-bottom: 1px solid #e9e9e973;
+          color: #555;
+          background: white;
+          width: 100%;
+      }
+      
+      #output{
+      color: #aaa;
+      padding: 14px 0;
+      margin: 0 20px;
+      }
+
+      input{
+          padding: 10px 20px;
+          box-sizing: border-box;
+          border: 0;
+          background: #eee;
+          display: block;
+          width: 100%;
+      }
+      .butoner{
+          background: #575ed8;
+          color: #fff;
+          font-size: 18px;
+          border: 0;
+          padding: 12px 0;
+          width: 100%;
+          border-radius: 0 0 2px 2px;
+      }

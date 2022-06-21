@@ -1,0 +1,115 @@
+NODE JS
+@author. Julio César Asto Machuca
+
+===========================================================
+---------------------- LIBRERÍAS NPM ----------------------
+===========================================================
+- colors		-> Da color a las salidas por consola, OK		|	
+- nodemon 		-> Muy bueno									|	
+- yargs			-> Sirve para crear y determinar comandos de consola.
+- inquire		-> Ayuda a crear menus dinámicos por consola.	|
+- uuid			-> Crea id's únicas.							|
+- @hapi/joi 	-> Permite hacer validaciones, es genial. 		|	https://hapi.dev/tutorials/validation?lang=en_US
+
+PRIORITARIAS:
+-------------
+- atajos		-> Atajos en vs code						| 	https://vscode.one/comment-vscode/
+- express		->
+- mongoose		-> SuperSet de la appi de MongoDB. lo mejor	| 	https://mongoosejs.com/
+
+===========================================================
+---------------------- TEORÍA BÁSICA ----------------------
+===========================================================
+- parsear  -> 	Sinonimo de castear
+- callback ->  	No es más que una función que se manda como argumento a otra función.
+				¿Es una función que entra a la lista de Callbacks y se ejecuta cuando 
+				es su turno en la lista?
+- promese(resolve, reject) -> 
+				Es una forma ordenada de escribir un Callback, en el que puedo manejar una función
+				de salida (si el resultado es correcto) o en su defecto, una excepción (si el resultado es incorrecto).
+
+	Ojo: Las promesas pueden construir un AWAIT: Que genera una función que espera por una respuesta.
+
+- async()	-> 	Transforma mi función en una promesa.
+- await()	-> 	Solo puede ser ocupado dentro de una función asíncrona (async).
+				Se recomienda, que la función contenga su propio manejo de excepciones, dentro de un try-catch();
+			-> 	para retornar la nomenclatura sería tal que:
+				funcion(parametros)
+				.then( msg => funcion(msg))
+				.catch( err => funcion(err));
+
+MIDDLEWARE 	
+----------		
+Un middleware es un bloque de código que se ejecuta entre la petición del cliente
+y la respuesta del servidor: app.use(function(req, res, next));
+
+EXPORT & REQUIRE:
+-----------------
+En NODE, todos los ficheros que se quieran utilizar en otros tienen que ser exportados y requeridos. 
+A continuación, colocamos una serie de códigos para resolver dichas funciones:
+(EJEMPLO: https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+
+- EXPORTS:
+	- exports.nomVariable 	-> Exporta una variable o atributo.
+	- exports.nomMetodo	-> Exporta todo un método.
+	- module.exports 	-> Exporta toda una clase.
+
+- REQUIRE:
+	- const n = require('n')		-> Importa toda una librería de NODE.
+	- const n = require('./n')		-> Importa toda una librería del proyecto.
+	- const { n1, n2 } = require('./n')	-> Importa métodos específicos de toda una librería a escoger.
+
+MÉTODOS REQUEST:
+----------------
+- req.body			->	Solicita lo que venga dentro del formulario.
+- req.params.x 		->	Devuelve un parametro definido por el programador (x)
+- req.flash			->	Envia una alerta que aparece en la cabecera del body y se puede cerrar.
+
+MÉTODOS RESPONSE:
+-----------------
+- res.status(404) 	->	Devuelve un status http, en este ejemplo estamos devolviendo el status NOT FOUND.
+- res.send()	  	->	Envia una respuesta del tipo indicado dentro del parámetro.
+- res.json()		-> 	Envia una respuesta de tipo JSON.
+- res.redirect()	->	Redirige la vista a otra ruta señalada por el programador.
+
+
+===========================================================
+------------------------- EXPRESS -------------------------
+===========================================================
+const express 	= require('express');
+const app	= express();
+
+MÉTODOS EXPRESS:
+----------------
+- app.use(middlew)	-> 	Permite usar middlewares.
+- app.listen();		-> 	Escucha el puerto que se le desea asignar a un servidor.
+						Y crea una conección a dicho servidor desde el puerto enviado.
+
+MIDDLEWARES:
+------------
+Un middleware es un bloque de código que se ejecuta entre la petición del cliente
+y la respuesta del servidor: app.use(function(req, res, next));
+
+- express.json()   	->	Esté middleware tendría que ir al inicio del todo
+						Se queda aquí por fines educativos. 
+					->	Sintaxis:
+						app.use(express.json());
+							
+- express.urlencoded({ extended: true })	
+					-> 	Middleware que nos permite comunicar nuestra APPI-REST
+						con datos de tipo querystring. 
+
+- express.static()	-> 	Express recibe y renderiza ficheros de tipo estático.
+- morgan()			->	
+		('tiny')	-> 	Formato por defecto de morgan.
+
+MÉTODOS APPI-REST:
+------------------
+- app.get();	//Petición.
+- app.post();	//Envio de datos.
+- app.put();	//Actualización.
+- app.delete();	//Eliminación.
+
+===========================================================
+------------------------- HAP/JOI -------------------------
+===========================================================

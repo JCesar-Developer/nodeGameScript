@@ -1,0 +1,26 @@
+--------------------
+[ --- CONTIENE --- ]
+--------------------
+-> Aquí irán los modelos de los registros (basados en los objetos) 
+-> El modelo contendra, los campos con sus respectivas validaciones.
+-> Los ficheros de esté paquete no contienen ninguna lógica.
+
+----------------------
+[ --- DEFINICIÓN --- ]
+----------------------
+Contiene una representación de los datos que maneja el sistema, 
+su lógica de negocio, y sus mecanismos de persistencia.
+
+---------------------
+[ --- FUNCIONES --- ]
+---------------------
+-> Acceder a la capa de almacenamiento de datos. ¿Conexión y desconexión?
+-> Define las reglas de negocio (la funcionalidad del sistema).
+    Ejemplo: "Si la mercancía pedida no está en el almacén,
+    consultar el tiempo de entrega estándar del proveedor".
+
+-> ¿Lleva un registro de las vistas y controladores del sistema?
+
+-> ¿Notifica a las vistas los cambios que en los datos pueda producir un agente externo?
+    Ejemplo: Un fichero por lotes que actualiza los datos, 
+             Un temporizador que desencadena una inserción, etc.

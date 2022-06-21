@@ -1,0 +1,33 @@
+@import "0_general.css";
+
+/*PRIMERA FILA*/
+.footer-row1{    
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+    @media(max-width: 480px){
+        .footer-row1{    
+            display: grid;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+.licencia{
+    max-width: 160px;
+    max-height: 90px;
+}
+
+/*SEGUNDA FILA*/
+.footer-row2{
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+/*TERCERA FILA*/
+.footer-row3{
+    padding-top: 20px;
+}
+.row3-enlace{
+    text-align: center;
+}

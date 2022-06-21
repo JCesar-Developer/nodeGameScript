@@ -1,0 +1,51 @@
+===========================================================
+------------------------- MONGO-DB ------------------------
+===========================================================
+INDICAR DIRECCIÓN DONDE SE ALMACENARÁN LOS DATOS:
+mongod --dbpath (dirPaquete);
+
+(CONNEXIÓN JULITO:)
+- cd C:\Program Files\MongoDB\Server\5.0\bin
+- mongod --dbpath D:\MongoDB\gameScript
+
+Métodos de mongo DB:
+--------------------
+//Se aconseja meter todos los métodos en una función asincrona:
+- modelo.save()		-> Agrega el modelo a la BBDD.
+- Schema.find()
+- Schema.findOne()
+	//Parámetros de salida:
+	- .find()		-> Clausula where. ejemplo: .find({autor : "Julito"}) | .find({publicado : true})
+	- .limit()		-> Define el máximo de registros. Recibe parametros de tipo int. 
+	- .sort()		-> Define el orden de salida (-1: descendente | 1: ascendente). Ejemplo: ({author: -1}).
+	- .select()		-> Indica que muestre campos específicos del registro.
+	
+	//OPERADORES DE COMPARACIÓN: 
+    - eq  (equals | igual)
+    - ne  (not equals | no igual)
+    - gt  (greater than | mayor que)
+    - gte (greater than or equals | mayor o igual que)
+    - lt  (less than | menor que)
+    - lte (less than or equal to | menor o igual que)
+    - in  (Equivalente al in de SQL)
+    - nin (not in)
+		
+		Colocaremos los OC dentro de los parámetros de salida.
+		// Ejemplo1: NO EJECUTA
+			.find({precio: {$gte: 10, $lte: 30}})
+		// Ejemplo2: NO EJECUTA
+			.find({precio: {$in: [10, 15, 25]}})
+			
+	//OPERADORES LÓGICOS: 
+	- or  -> Se aplica si no se ejecuta la primera función.
+    - and -> Agrega nuevos filtros específicos a la búsqueda.
+	
+		Colocaremos los OL debajo del parametro correspondiente. 
+		//EJEMPLO:
+			.find()
+			.and([{author: "Julito"},{publicado: true}])
+			
+	//EXPRESIONES REGULARES:
+    - /^__/    -> Que empiece con. Ejemplo: /^Jul/
+    - /__$/    -> Que termine con. Ejemplo: /ito$/ 
+    - /.*__.*/ -> Que contenga.    Ejemplo: /.*uli.*/

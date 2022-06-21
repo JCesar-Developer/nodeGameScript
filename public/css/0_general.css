@@ -1,0 +1,98 @@
+/* PALETA DE COLORES */
+:root{
+    /*Colore preferibles para TEXTO*/
+    --blanco:   #ffffff;
+    --arena:    #f5f0cc;
+
+    /*Colore preferibles para FOOTER y HEADER*/
+    --negro:    #060606;
+    --gris1:    #0e0e0e;
+    --gris2:    #262626;
+    --gris3:    #ccc6b4;
+
+    /*Colores preferibles para MAIN y CONTAINERS*/
+    --verde1:   #333d29;
+    --verde2:   #414833;
+    --verde3:   #656d4a;
+    --verde4:   #a4ac86;    
+}
+
+/* TIPOGRAFÍA */
+.titulo{
+    color:          var(--blanco);
+    font-family:    Verdana, Geneva, Tahoma, sans-serif;   
+    text-shadow:    rgb(44 43 43) 2px 2px 3px;
+    font-weight:    bold;
+}
+.subtitulo{
+    color:      var(--arena);
+    text-shadow:rgb(44 43 43) 2px 2px 3px;
+}
+.parrafo_1{
+    color: var(--blanco);
+}
+.parrafo_2{
+    color: var(--gris3);
+}
+.parrafo_3{
+    color: var(--negro);
+}
+
+/* BACKGROUNDS */
+.background-negro{
+    background-color:   var(--negro);
+    color:              var(--gris3)     
+}
+.background-gris{
+    background-color: var(--gris1);
+}
+.background-negro{
+    background-color: var(--negro);
+}
+.background-main{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, black 0%, var(--verde4) 35%, var(--verde2) 100%);
+    /* background: url(/public/img/grass-pattern.png); */
+}
+.background-main-footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, black 0%, black 35%, var(--verde2) 100%);
+    
+}
+
+/* CONTENEDORES */
+.contenedor_1{
+    background-color: var(--verde1);
+}
+.contenedor_2{
+    background-color: var(--verde2);
+}
+.contenedor_3{
+    background-color: var(--verde3);
+}
+.contenedor_4{
+    background-color: var(--verde4);
+}
+
+/* MEDIA_QUERIES */
+/*Todo lo que está por debajo de 1024px*/
+@media (max-width: 1024px) {
+}
+
+/*Todo lo que está por debajo de 768px*/
+@media (max-width:  768px) {
+}
+
+/*Todo lo que está por debajo de 480px*/
+@media (max-width:  480px) {
+}  
+
+/*Todo lo que está por debajo de 376px*/
+@media (max-width:  3760px) {
+}  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

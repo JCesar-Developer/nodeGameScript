@@ -1,0 +1,138 @@
+/** HEADER-NAVBAR **/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.color-brown {
+  color: white;
+  background-color: brown;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.row{
+  color: white;
+}
+
+.crea_usuario{
+  font-size: 1rem;
+  background-color: #81b29a; 
+}
+
+.iframe-header {
+  width: 100%;
+  height: 300px;
+  border-style: none;
+}
+
+.iframe-footer {
+  width: 100%;
+  height: 300px;
+  border-style: none;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.head {
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 520px) {
+  .mask {
+    display: inline-block;
+    justify-content: center;
+  }
+}
+
+.imagenes-final {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+#separador-funkos {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+#separador-funkos .content {
+  background: url(/public/img/grass-pattern.png);
+  width: 110%;
+  height: 100px;
+  margin-left: -5%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+#funkos {
+  background: url(/public/img/grass-pattern.png);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+.funko {
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.funko:hover {
+  transform: scale(1.05);
+}
+
+.funko-name {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+/**/
+.content-mask{
+  
+  image-resolution: responsive;
+  margin-left: 50px;
+}
+.content-name{
+  
+  image-resolution: responsive;
+  display: inline-flec;
+  
+}
+.content{
+  padding: 20px;
+}

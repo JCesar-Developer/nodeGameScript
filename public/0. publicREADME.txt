@@ -1,0 +1,32 @@
+[ --- DEFINICIÓN --- ] 
+-> Ficheros estáticos HTML
+-> Ficheros estáticos CSS
+-> Ficheros estáticos IMG
+-> Ficheros estáticos JS
+
+[ --- DEFINICIÓN --- ] 
+La Vista, o interfaz de usuario, compone:
+- La información que se envía al cliente (Documentos estáticos).
+- Los mecanismos interacción con éste (Botones, formularios).
+
+¿?
+Presenta los datos del modelo al usuario. 
+La vista sabe cómo acceder a los datos del modelo, 
+pero no sabe qué significa esta información o 
+qué puede hacer el usuario para manipularla.
+
+---------------------
+[ --- FUNCIONES --- ]
+---------------------
+- Recibe los eventos de entrada 
+  EJEMPLO: POST - Un clic
+                - Un cambio en un campo de texto, etc.
+
+- ¿Tienen un registro de su controlador asociado?
+  (normalmente porque además lo instancia)
+  ¿Cómo se crea ese registro? ¿Tablas?
+
+- Pueden dar el servicio de "Actualización()", ¿AJAX?
+  para que sea invocado por el controlador o por el modelo 
+  (cuando es un modelo activo que informa de los cambios en 
+  los datos producidos por otros agentes).
